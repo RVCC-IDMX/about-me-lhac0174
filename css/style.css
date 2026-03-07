@@ -2,12 +2,13 @@ body{
     font-family: Montserrat;
 
     background-color: #C49F66;
-    color: #2E3336;
+    color: #141414;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: Barlow;
     font-size:40pt;
+    color: #141414;
 }
 
 header {
@@ -15,9 +16,9 @@ header {
 }
 
 #hero, footer {
-    color:#2E3336;
+    color:#141414;
     border: 5px solid #486E8B;
-    background-color: #836C49;
+    background-color: #AD9063;
     text-align:center;
     padding:10px;
 }
