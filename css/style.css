@@ -9,6 +9,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: Barlow;
     font-size:40pt;
     color: #141414;
+    text-align:center;
 }
 
 header {
@@ -29,5 +30,14 @@ header {
 
 #bio {
     text-align: center;
+}
+
+#bio ul, li {
+    list-style-type: square;
+    list-style-position: inside;
+    text-align: center;
+    color:#182936;
+    line-height: 1.5;
+    font-weight: bold;
 }
 
