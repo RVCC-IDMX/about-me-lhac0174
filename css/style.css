@@ -52,6 +52,7 @@ header {
 #gallery {
     border: 5px dashed #486E8B;
     background-color: #AD9063;
+    margin-bottom: 2rem;
 }
 
 #gallery img {
@@ -61,4 +62,43 @@ header {
 
 #gallery figure {
     text-align: center;
+}
+
+/* Literature */
+
+#lit {
+    border: 5px dashed #486E8B;
+    margin-bottom: 1rem;
+
+}
+
+#Lit div {
+    padding: 3rem;
+    max-width: 40rem;
+    margin: 0 auto;
+    border: 5px inset #486E8B;
+    background-color: #AD9063;
+    margin-bottom: 2rem;
+}
+
+#Lit div p{
+    padding: 0.3rem 0;
+}
+
+#Lit div p::first-letter {
+    color: #18196A;
+    background-image:-moz-repeating-radial-gradient(#dbd5d5, #AD9063);
+    float:left;
+    font-size:4em;
+    padding:.15em;
+    margin-right:.15em;
+    line-height:.75;
+    border:2px outset #486E8B;
+    font-family: Barlow;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.5);
+    box-shadow:8px 8px 8px rgba(0,0,0,.5);
+    border-top-left-radius: .1em;
+    border-top-right-radius: .1em;
+    border-bottom-left-radius: .1em;
+    border-bottom-right-radius: .1em;
 }
