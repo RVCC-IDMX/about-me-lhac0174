@@ -12,6 +12,10 @@ h1, h2, h3, h4, h5, h6 {
     text-align:center;
 }
 
+h2 {
+    margin: .1em;
+}
+
 header {
     text-align: center;
 }
@@ -37,6 +41,12 @@ header {
 }
 
 /* Hobbies */
+
+#hobbies {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
 
 #hobbies ul, li {
     list-style-type: square;
@@ -88,6 +98,8 @@ header {
     padding: 0.3rem 0;
 }
 
+/* Dropcaps */
+
 #Lit div p::first-letter {
     color: #18196A;
     background-image:-moz-repeating-radial-gradient(#dbd5d5, #AD9063);
@@ -104,4 +116,21 @@ header {
     border-top-right-radius: .1em;
     border-bottom-left-radius: .1em;
     border-bottom-right-radius: .1em;
+}
+
+@media screen and (min-width: 50em) {
+    figure{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    figcaption{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        margin: 1rem;
+    }
+
+
 }
