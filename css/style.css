@@ -1,7 +1,7 @@
 body{
     font-family: Montserrat;
 
-    background-color: #C49F66;
+    background-color: #DBB172;
     color: #141414;
 }
 
@@ -45,6 +45,7 @@ header {
     color:#182936;
     line-height: 1.5;
     font-weight: bold;
+    padding: 0;
 }
 
 /* Gallery */
@@ -53,6 +54,7 @@ header {
     border: 5px dashed #486E8B;
     background-color: #AD9063;
     margin-bottom: 2rem;
+    padding: 0;
 }
 
 #gallery img {
@@ -69,6 +71,7 @@ header {
 #lit {
     border: 5px dashed #486E8B;
     margin-bottom: 1rem;
+    padding: 0;
 
 }
 
