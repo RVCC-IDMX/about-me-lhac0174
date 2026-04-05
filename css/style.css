@@ -40,6 +40,10 @@ header {
     text-align: center;
 }
 
+#video{
+    aspect-ratio: auto;
+}
+
 /* Hobbies */
 
 #hobbies {
@@ -133,13 +137,29 @@ header {
         margin: 1rem;
     }
 
-    figure img{
+    #gallery figure img{
         width: 100%;
     }
 
     #Lit div{
         max-width: 100%;
         columns: 40rem;
+    }
+
+    #video{
+        justify-content: center;
+        align-items: center;
+    }
+
+    #video h2{
+        justify-content: center;
+        align-items: center;
+    }
+
+    #myvideo {
+        aspect-ratio: auto;
+        justify-content: center;
+        align-items: center;
     }
 
 }
@@ -164,4 +184,19 @@ header {
         display: block;
     }
 
+    #video{
+        justify-content: center;
+        align-items: center;
+    }
+
+    #video h2{
+        justify-content: center;
+        align-items: center;
+    }
+
+    #myvideo {
+        aspect-ratio: auto;
+        justify-content: center;
+        align-items: center;
+    }
 }
