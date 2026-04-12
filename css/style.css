@@ -123,15 +123,39 @@ header {
 
 /* Contact Form */
 
-#contact {
-    margin-bottom: 1rem;
-}
-
-
 #formElements {
     display:grid;
+    row-gap:.5em;
 }
 
+#formElements li {
+    list-style-type: none
+}
+
+#contact {
+    padding: 1rem;
+    margin: 2rem auto;
+    margin-bottom: 1rem auto;
+    max-width: 600px;
+}
+
+legend{
+    background-color: #AD9063;
+    border: 5px inset #486E8B;
+}
+
+fieldset {
+    border: 5px inset #486E8B;
+    margin-top:1em;
+    margin-bottom:1em;
+    background-color: #AD9063;
+}
+
+#contact input, #contact textarea, #contact select, #contact button {
+    padding:.5em;
+    font-size:1rem;
+    border: 5px outset #486E8B;
+}
 
 
 /* tablet size */
