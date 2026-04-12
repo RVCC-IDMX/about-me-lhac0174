@@ -41,6 +41,8 @@ header {
 }
 
 #video{
+    width: 100%;
+    height: auto;
     aspect-ratio: auto;
 }
 
@@ -137,11 +139,15 @@ header {
     margin: 2rem auto;
     margin-bottom: 1rem auto;
     max-width: 600px;
+    font-family: Montserrat;
+    color: #141414;
 }
 
 legend{
     background-color: #AD9063;
-    border: 5px inset #486E8B;
+    border: 3px inset #486E8B;
+    font-family: Barlow;
+    color: #141414;
 }
 
 fieldset {
@@ -155,6 +161,7 @@ fieldset {
     padding:.5em;
     font-size:1rem;
     border: 5px outset #486E8B;
+    background-color: #f4e7d4;
 }
 
 
@@ -196,6 +203,13 @@ fieldset {
         aspect-ratio: auto;
         justify-content: center;
         align-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+    fieldset {
+        display: flex;
+        flex-direction: column;
     }
 
 }
@@ -234,5 +248,13 @@ fieldset {
         aspect-ratio: auto;
         justify-content: center;
         align-items: center;
+        width: 100%;
+        height: auto;
     }
+    
+    fieldset{
+        display:grid;
+    }
+
+
 }
