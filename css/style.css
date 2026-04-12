@@ -121,6 +121,18 @@ header {
     border-bottom-right-radius: .1em;
 }
 
+/* Contact Form */
+
+#contact {
+    margin-bottom: 1rem;
+}
+
+
+#formElements {
+    display:grid;
+}
+
+
 
 /* tablet size */
 @media screen and (min-width: 50em) {
