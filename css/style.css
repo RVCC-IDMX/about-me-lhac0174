@@ -73,13 +73,23 @@ header {
     padding: 0;
 }
 
-#gallery img {
-    max-width: 75%;
-    max-height: 75%;
-}
-
 #gallery figure {
     text-align: center;
+}
+
+#gallery figure img {
+    max-width: 75%;
+    max-height: 75%;
+    transition: transform 0.5s ease; /* slower animation */
+}
+
+#gallery figure:hover img{
+    transform: scale(1.2); /* zoom in on image */
+}
+
+#gallery figure:hover figcaption{
+    transition: transform 0.5s ease; /* slower animation */
+    transform: translateY(50px); /* move text down out of the way */
 }
 
 /* Literature */

@@ -35,7 +35,7 @@ I used #486E8B R:72 G:110 B:139 A:55, for the borders of my off-colored elements
 
 I used #f4e7d4 R:244 G:231 B:212 A:96, for the background of the text areas of the contact form to make it clear which areas were for user input.
 
-I did not really use #2891E0 R:40 G:145 B:224 A:88, but I had it ready in the back pocket if I needed another complementary color
+I use #2891E0 R:40 G:145 B:224 A:88, for the Figma Logo and for my favicon
 
 Swatch:
 
@@ -53,6 +53,8 @@ Color 6: #141414 R:20 G:20 B:20 A:8
 
 
 ## Citations
+
+Stoker, B. (1993). Dracula. Wordsworth Editions.
 
 ptra (2016). logo-origami-bird-flying-blue "ptra-logo-1913689.svg" https://pixabay.com/vectors/logo-origami-bird-flying-blue-1913689/
 
