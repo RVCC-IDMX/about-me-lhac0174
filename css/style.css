@@ -125,6 +125,8 @@ div pre code {
   color:#141414;
   border: 1px solid #486E8B;
   display: block;
+  white-space: pre;
+  overflow-x: auto;
 }
 
 /* CSS Sprites example */
@@ -267,6 +269,11 @@ fieldset {
     fieldset {
         display: flex;
         flex-direction: column;
+    }
+
+    div pre code{
+        white-space: pre-wrap;
+        overflow-wrap: break-word;
     }
 
 }
