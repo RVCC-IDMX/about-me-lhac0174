@@ -1,4 +1,4 @@
-# About Me README
+# About Me Webpage README
 
 
 ## Name
@@ -25,31 +25,33 @@ I also learned to create navigation and utilize transitions and animations in my
 
 ## Color Scheme
 
-I used #DBB172 R:219 G:177 B:114 A:86, for the background of the page.
+![example image of #DBB172](readme_img/DBB172_example.png) I used `#DBB172`, for the background of the page.
 
-I used #AD9063 R:173 G:144 B:99 A:68, for the background of some elements of the page, as it provided contrast from the main background while also contrasting enough with the color I chose for text.
+![example image of #AD9063](readme_img/AD9063_example.png) I used `#AD9063`, for the background of some elements of the page, as it provided contrast from the main background while also contrasting enough with the color I chose for text.
 
-I used #141414 R:20 G:20 B:20 A:8, for most text as it provided good readability against the backgrounds I chose.
+![example image of #141414](readme_img/141414_example.png) I used `#141414`, for most text as it provided good readability against the backgrounds I chose.
 
-I used #486E8B R:72 G:110 B:139 A:55, for the borders of my off-colored elements to highlight the distinction.
+![example image of #486E8B](readme_img/486E8B_example.png) I used `#486E8B`, for the borders of my off-colored elements to highlight the distinction.
 
-I used #f4e7d4 R:244 G:231 B:212 A:96, for the background of the text areas of the contact form to make it clear which areas were for user input.
+![example image of #f4e7d4](readme_img/f4e7d4_example.png) I used `#f4e7d4`, for the background of the text areas of the contact form to make it clear which areas were for user input.
 
-I use #2891E0 R:40 G:145 B:224 A:88, for the Figma Logo and for my favicon
+![example image of #2891E0](readme_img/2891E0_example.png) I used `#2891E0`, for the Figma Logo and for my favicon
 
 Swatch:
 
-Color 1: #2891E0 R:40 G:145 B:224 A:88
+Color 1: `#DBB172` R:219 G:177 B:114 A:86 
 
-Color 2: #AD9063 R:173 G:144 B:99 A:68
+Color 2: `#AD9063` R:173 G:144 B:99 A:68
 
-Color 3: #DBB172 R:219 G:177 B:114 A:86
+Color 3: `#141414` R:20 G:20 B:20 A:8
 
-Color 4: #486E8B R:72 G:110 B:139 A:55
+Color 4: `#486E8B` R:72 G:110 B:139 A:55
 
-Color 5: #f4e7d4 R:244 G:231 B:212 A:96
+Color 5: `#f4e7d4` R:244 G:231 B:212 A:96
 
-Color 6: #141414 R:20 G:20 B:20 A:8
+Color 6: `#2891E0` R:40 G:145 B:224 A:88
+
+
 
 
 ## Citations

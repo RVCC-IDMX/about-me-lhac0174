@@ -1,3 +1,4 @@
+/* Default for the body */
 body{
     font-family: Montserrat;
 
@@ -94,12 +95,12 @@ header {
 
 /* Literature */
 
-#Lit {
+#lit {
     margin-bottom: 1rem;
     padding: 0;
 }
 
-#Lit div {
+#lit div {
     padding: 2rem;
     max-width: 40rem;
     margin: 0 auto;
@@ -108,14 +109,14 @@ header {
     margin-bottom: 2rem;
 }
 
-#Lit div p{
+#lit div p{
     padding: 0.3rem 0;
     clear: both;
 }
 
 /* Dropcaps */
 
-#Lit div p::first-letter {
+#lit div p::first-letter {
     color: #18196A;
     background-image:-moz-repeating-radial-gradient(#dbd5d5, #AD9063);
     float:left;
