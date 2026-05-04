@@ -129,18 +129,99 @@
 
         <article id="lit">
 
-            <h2>Dracula - Bram Stoker</h2>
+            <h2>Blog - CSS Sprites</h2>
 
             <div>
-                <p>How these papers have been placed in sequence will be made manifest in the reading of them. All needless matters have been eliminated, so that a history almost at variance with the possibilities of later-day belief may stand forth as simple fact. There is throughout no statement of past things wherein memory may err, for all the records chosen are exactly contemporary, given from the standpoints and within the range of knowledge of those who made them.</p>
+                <p>Sprites are a pretty ingenious way to reduce the number of server requests that a webpage requires to display images. Instead of making an individual request for a file for each image shown, all of the images used on a webpage are combined into a single image, known as a spritesheet.<sup>[1][2][3]</sup> This spritesheet is fetched once, and each image on the web page is simply displaying a specific portion of the larger spritesheet. While technically speaking, multiple images combined into a single image means a larger filesize than the smaller images would cumulatively be, this is more efficient because each request made to the server requires handshaking, meaning that multiple requests means making those handshakes multiple times.<sup>[3]</sup> Another reason to use this is that browsers limit the number of concurrent requests, which can cause the display to look odd as the page loads images one after another instead of all at the same time.<sup>[3]</sup></p>
 
-                <p>I am beginning to feel this nocturnal existence tell on me. It is destroying my nerve. I start at my own shadow, and am full of all sorts of horrible imaginings. God knows that there is ground for my terrible fear in this accursed place! I looked out over the beautiful expanse, bathed in soft yellow moonlight till it was almost as light as day.</p>
+                <h3> Making the Spritesheet </h3>
+                
+                <p>This can be the most annoying part of this technique, especially if you don't plan ahead what images you need or if the images change during development. You need to have a single image file containing all of the images you need for your webpage. There are automated tools that can make creating and updating the spritesheet easier, or you can create this image manually. Simply open your images in your favorite editor, place them on the same canvas, and export them as a single image. I used Gnu Image Manipulation Program (GIMP), but any similar program such as Adobe Photoshop or Microsoft Paint should work.</p>
 
-                <p>The morning of 16 May broke bright and cheerful. The sun shone warm and brilliant, and the birds sang sweetly in the trees. The very air seemed full of hope and happiness. I felt that the cloud of gloom which had been hanging over us for so long was lifting, and that we were about to enter upon a new phase of our strange and terrible experience.</p>
+                <p>From there, we need to edit the HTML of our website. inside the <img> tags for your images it is important to add an id that you can refer to in the CSS stylesheet. One small bit of advice is that while you can't leave the src attribute blank, it doesn't matter what it is, because it'll be overwritten by the portion of the spritesheet we specify in the CSS stylesheet. So pointing the src to the smallest image you can might be a good idea.</p>
 
-                <p>The castle is on the very edge of a terrible precipice. A stone falling from the window would fall a thousand feet without touching anything! As far as the eye can reach is a sea of green tree tops, with occasionally a deep rift where there is a chasm. Here and there are silver threads where the rivers wind in deep gorges through the forests.</p>
+                <p>Next, in the CSS stylesheet, for each img tag, create a section and specify the width and height of your image and whatever other styling you want. Specifically for the spritesheet, the important properties that you'll want to use are background-image and background-position.</p>
 
+                <p>The arguments you'll use for these properties are:<br>background-image: url(yourSpriteSheet.png);<br>where yourSpriteSheet.png is whatever you've named your spritesheet.<br>and<br>background-position: X Y<br>where X and Y are the value for how far you need to slide the background image to show the correct portion for the image </p>
 
+                <p>Some example code for the HTML I created to show this is below:</p>
+
+                <!-- This looks ugly indented this way, but is required for it to display correctly in the block -->
+                <pre>
+                    <code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;link href=&quot;css/style.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;img id=&quot;smiley&quot; src=&quot;img/blank_example.png&quot; width=&quot;1&quot; height=&quot;1&quot;
+    alt=&quot;an image of a smiley face&quot;&gt;
+    &lt;img id=&quot;triangle&quot; src=&quot;img/blank_example.png&quot; width=&quot;1&quot; height=&quot;1&quot; 
+    alt=&quot;an image of a triangle&quot;&gt;
+    &lt;img id=&quot;circle&quot; src=&quot;img/blank_example.png&quot; width=&quot;1&quot; height=&quot;1&quot;
+    alt=&quot;an image of a circle&quot;&gt;
+    &lt;img id=&quot;X&quot; src=&quot;img/blank_example.png&quot; width=&quot;1&quot; height=&quot;1&quot;
+    alt=&quot;an image of an X&quot;&gt;
+    
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+                    </code>
+                </pre>
+
+                <p>And the example code for CSS:</p>
+                <!-- This looks ugly indented this way, but is required for it to display correctly in the block -->
+                <pre>
+                    <code>
+#smiley{
+  width: 240px;
+  height: 240px;
+  background-image: url(../img/spriteSheetExample.png);
+  background-position: 0 0;
+}
+
+#triangle{
+  width: 240px;
+  height: 240px;
+  background-image: url(../img/spriteSheetExample.png);
+  background-position: 240px 0;
+}
+
+#circle{
+  width: 240px;
+  height: 240px;
+  background-image: url(../img/spriteSheetExample.png);
+  background-position: 0 -240px;
+}
+
+#X{
+  width: 240px;
+  height: 240px;
+  background-image: url(../img/spriteSheetExample.png);
+  background-position: 240px -240px;
+}
+                </code>
+            </pre>
+
+                <p>This should give you an output like this:</p>
+
+                <img id="smiley" src="img/blank_example.png" width="1" height="1" alt="an image of a smiley face">
+                <img id="triangle" src="img/blank_example.png" width="1" height="1" alt="an image of a triangle">
+                <img id="circle" src="img/blank_example.png" width="1" height="1" alt="an image of a circle">
+                <img id="X" src="img/blank_example.png" width="1" height="1" alt="an image of an X">
+
+                <p>While implementing css sprites takes some planning ahead and is much more involved than using the traditional &lt;img&gt; tags, I think that many web developers could benefit from using this technique. Not only can it save your servers from getting hammered by request after request per image, it can be essential in preventing large webpages with many images from looking wrong as the browser iterates through requests sequentially. Instead, the page loads slightly slower, but all elements appear at the same time.</p>
+
+                <h3> Citations: </h3>
+
+                <p>[1] W3schools.com. W3Schools Online Web Tutorials. (n.d.). https://www.w3schools.com/css/css_image_sprites.asp </p>
+
+                <p>[2] MozDevNet. (n.d.). Web. MDN Blog RSS. https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Images/Implementing_image_sprites  </p>
+
+                <p>[3] Chris Coyier Oct 24, & Coyier, C. (2017, June 27). CSS sprites: What they are, why they’re cool, and how to use them: CSS-tricks. CSS. https://css-tricks.com/css-sprites/  </p>
 
             </div>
         </article>

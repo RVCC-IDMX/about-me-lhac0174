@@ -56,6 +56,14 @@ Color 6: `#2891E0` R:40 G:145 B:224 A:88
 
 ## Citations
 
+W3schools.com. W3Schools Online Web Tutorials. (n.d.). https://www.w3schools.com/css/css_image_sprites.asp 
+
+MozDevNet. (n.d.). Web. MDN Blog RSS. https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Images/Implementing_image_sprites 
+
+Chris Coyier Oct 24, & Coyier, C. (2017, June 27). CSS sprites: What they are, why they’re cool, and how to use them: CSS-tricks. CSS. https://css-tricks.com/css-sprites/ 
+
+Previous versions of this project included content from the following:
+
 Stoker, B. (1993). Dracula. Wordsworth Editions.
 
 ptra (2016). logo-origami-bird-flying-blue "ptra-logo-1913689.svg" https://pixabay.com/vectors/logo-origami-bird-flying-blue-1913689/
