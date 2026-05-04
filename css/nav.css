@@ -50,6 +50,8 @@ main {
 .logo h1 {
     font-size: 1.2em;
     color: whitesmoke;
+    text-indent: 1rem;
+    text-align: center;
 }
 
 
@@ -86,6 +88,61 @@ main {
     outline: none;
 }
 
+/* Hiding the checkbox */
+.menu-toggle {
+    display: none;
+}
+
+/* creating the hamburger */
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 5px;
+    background: whitesmoke;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+/* default menu state */
+.nav-links {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+}
+
+/* show menu when checkbox is checked */
+.menu-toggle:checked ~ .nav-links {
+    display: flex;
+}
+
+/* change hamburger into an X */
+
+/* first span becomes one line of the x */
+.menu-toggle:checked ~ .hamburger span:nth-child(1){
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+/* second span becomes opaque */
+.menu-toggle:checked ~ .hamburger span:nth-child(2){
+    opacity: 0;
+}
+
+/* third span becomes other line of the x */
+.menu-toggle:checked ~ .hamburger span:nth-child(3){
+    transform: rotate(-45deg) translate(8px, -9px);
+}
+
+/* media query to hide hamburger on large screens */
+@media screen and (min-width: 100em){
+    .hamburger{
+        display: none;
+    }
+
+    .nav-links{
+        display: flex;
+        flex-direction: row;
+    }
+}
 
 
 /* 
@@ -106,3 +163,6 @@ such that no text wraps
     }
 
 }
+
+
+

@@ -23,7 +23,18 @@
                     <h1>Web Dev I</h1>
             </div>
             <div class="navbar-links">
-                <ul>
+
+                <!-- checkbox to toggle the menu -->
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+                <!-- Hamburger Icon -->
+                <label for="menu-toggle" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+
+                <ul class="nav-links">
                     <li><a href="#bio">Bio</a></li>
                     <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#lit">Blog</a></li>
@@ -38,6 +49,9 @@
          <section id="hero">
             <!--hero section: shows profile image, name & location -->
             <img src="img/avataaars.png" alt="Avatar picture of me">
+
+            <!--I know the instructions say to add a picture of myself here, but as a matter of personal preference I don't want to publish images of my face online-->
+            <!--There's no way to stop someone from scraping these projects for information and there's already a lot of PII on this page as is -->
 
             <div>
                 <p>Leo Hackett</p>
@@ -138,9 +152,9 @@
                 
                 <p>This can be the most annoying part of this technique, especially if you don't plan ahead what images you need or if the images change during development. You need to have a single image file containing all of the images you need for your webpage. There are automated tools that can make creating and updating the spritesheet easier, or you can create this image manually. Simply open your images in your favorite editor, place them on the same canvas, and export them as a single image. I used Gnu Image Manipulation Program (GIMP), but any similar program such as Adobe Photoshop or Microsoft Paint should work.</p>
 
-                <p>From there, we need to edit the HTML of our website. inside the <img> tags for your images it is important to add an id that you can refer to in the CSS stylesheet. One small bit of advice is that while you can't leave the src attribute blank, it doesn't matter what it is, because it'll be overwritten by the portion of the spritesheet we specify in the CSS stylesheet. So pointing the src to the smallest image you can might be a good idea.</p>
+                <p>From there, we need to edit the HTML of our website. inside the &lt;img&gt; tags for your images it is important to add an id that you can refer to in the CSS stylesheet. One small bit of advice is that while you can't leave the src attribute blank, it doesn't matter what it is, because it'll be overwritten by the portion of the spritesheet we specify in the CSS stylesheet. So pointing the src to the smallest image you can might be a good idea.</p>
 
-                <p>Next, in the CSS stylesheet, for each img tag, create a section and specify the width and height of your image and whatever other styling you want. Specifically for the spritesheet, the important properties that you'll want to use are background-image and background-position.</p>
+                <p>Next, in the CSS stylesheet, for each &lt;img&gt; tag, create a section and specify the width and height of your image and whatever other styling you want. Specifically for the spritesheet, the important properties that you'll want to use are background-image and background-position.</p>
 
                 <p>The arguments you'll use for these properties are:<br>background-image: url(yourSpriteSheet.png);<br>where yourSpriteSheet.png is whatever you've named your spritesheet.<br>and<br>background-position: X Y<br>where X and Y are the value for how far you need to slide the background image to show the correct portion for the image </p>
 

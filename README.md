@@ -20,7 +20,11 @@ I then went on to learn about the box model, and about building for mobile, and 
 
 I learned to embed media, build tables and forms. 
 
-I also learned to create navigation and utilize transitions and animations in my work.
+I also learned to create a navigation bar and utilize transitions and animations in my work.
+
+For the final project, I learned how to create and implement css spritesheets.
+
+Also for the final project, I learned how to create a hamburger icon that toggles the display of navigation on mobile devices
 
 
 ## Color Scheme
